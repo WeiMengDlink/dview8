@@ -1,0 +1,24 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@localhost:8762/eureka/
+#    register-with-eureka: false
+#    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 3000
+#  instance:
+
+#   　hostname: localhost
+spring:
+  application:
+    name: eureka
+server:
+  port: 8761
+security:
+   basic:
+      enabled: true
+   user:
+      name: admin
+      password: admin

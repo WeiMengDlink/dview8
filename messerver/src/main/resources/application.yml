@@ -1,0 +1,24 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@localhost:8761/eureka/,http://admin:admin@localhost:8762/eureka/
+#  instance:
+#    hostname: appName
+spring:
+  application:
+    name: goods
+server:
+  port: 8081
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/springcloud_microserver??useUnicode=true&characterEncoding=UTF-8&useSSL=false
+#    username: root
+#    password: 123456
+#  data:
+#    mongodb:
+#      password:
+#      username:
+#      uri:
+#      database:
+#  jpa:
+#    show-sql: true
